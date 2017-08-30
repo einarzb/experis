@@ -1,0 +1,77 @@
+  <!DOCTYPE html>
+  <html ng-app="roboApp" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="controller/roboCtrl.js"></script>
+    <script src="services/roboService.js"></script>
+
+
+    <style>
+    body{
+      font-family: 'Arial'
+    }
+      .thumb{
+        padding-top: 19px;
+        text-align: center;
+        background-color: #e1e1e1;
+        border-radius: 8px;
+        width:300px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .roboImg{
+        margin-left:-220px;
+        border:2px solid black;
+        border-radius: 5px;
+        background-color: #fff;
+        margin-top: -20px;
+      }
+
+      #close {
+      /*margin-top: -20px;*/
+      font-size: 0.7em;
+      background-color: red;
+      color:#fff;
+      border-radius: 5px;
+      border:none;
+      }
+
+      .btns{
+        margin-left: 60px;
+      }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Robo List</title>
+  </head>
+  <body ng-controller="roboCtrl as ctrler">
+    <h1>Robolist</h1>
+    <hr>
+    <div ng-repeat="robot in ctrler.robots track by $index">
+       <div class="clearfix" ng-if="$index % 5 == 0"></div>
+       <p>is middle? {{$middle}}</p>
+       <p>is even?{{$even}}</p>
+      <div class="thumb">
+        {{$index}}. {{ctrler.robots[$index].first_name}} {{ctrler.robots[$index].last_name}} <br>
+        <div ng-show="togglePhone">
+           {{ctrler.robots[$index].phone}}
+        </div> <br>
+        <div class="btns">
+          <!-- $index is property of scope -->
+          <button id="close" ng-click="ctrler.clearRobot($index)" type="button">-</button>
+          <button type="button" ng-click="togglePhone = !togglePhone" name="button">
+            <i class="fa fa-eye" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <img class="roboImg" ng-src="{{ctrler.robots[$index].image}}" alt="">
+      </div>
+        <!-- {{robot}} -->
+      <!-- robots[$index].name -->
+    </div>
+  </body>
+  </html>

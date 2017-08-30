@@ -1,0 +1,8 @@
+- express generator
+- mysql db
+- jade
+- haml
+- sha1
+- node
+- express
+-Basic HTTP Authentication

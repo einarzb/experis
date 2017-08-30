@@ -1,0 +1,73 @@
+<!-- Create a form with many inputs.
+On change save all values of named fields to localStorage.
+On load, restore them from localStorage.
+Use JSON to save the values in one property which is the form ID if exists.
+otherwise the property is 'form-save-values'.
+ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>my Form</title>
+    <style media="screen">
+
+      body{
+      font-family: arial;
+      margin:0;
+      text-align: center;
+      font-size: 18px;
+    }
+    .main{
+      height: 100%;
+      width:100%;
+      display: block;
+      margin: auto;
+      background-color: salmon;
+    }
+
+    form{
+      padding-top: 5px;
+      line-height: 20px;
+      border:2px solid #000;
+      border-radius: 8px;
+      width:300px;
+      margin: auto;
+      margin-top:200px;
+    }
+
+    input{
+      border-radius: 8px;
+      border:none;
+      padding:4px;
+      margin:2px;
+    }
+    button {
+      margin:5px;
+      width:80px;
+      height: 2em;
+      color:#fff;
+      font-size: 1em;
+      border-radius: 8px;
+    }
+    </style>
+  </head>
+
+ 	<body>
+    <div class="main">
+     		<form id="myForm" method="post" autocomplete="on" onchange="makeJSON()">
+     			<label>first name</label>
+     			<input type="text" name="firstname" id="firstname" value="" placeholder="first name" required autofocus> <br>
+          <label>last name</label>
+     			<input type="text" name="lastname" id="lastname" value="" placeholder="last name" required> <br>
+          <label>address</label>
+     			<input type="text" name="address" id="address" value="" placeholder="address" required><br>
+          <label>phone</label>
+          <input type="tel" name="phone" id="phone" value="" placeholder="phone" maxlength="10" minlength="7" required><br>
+          <button type="submit"> send</button>
+        </form>
+      </div>
+
+ 		<script src="script2.js"></script>
+ 	</body>
+ </html>

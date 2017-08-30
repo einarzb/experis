@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>accordion</title>
+    <style>
+
+      .accordion > div {
+        display: none;
+      }
+
+      .accordion > h3:hover + div{
+        display: block;
+      }
+
+      input[type=checkbox]{
+        width:1.5em;
+        height:1.5em;
+        /*display: none;*/
+        }
+        /*every label right after checkbox*/
+        input[type=checkbox] + label {
+          font-weight: bold;
+          background-image:url(http://www.clker.com/cliparts/e/q/p/N/s/G/checkbox-unchecked-md.png);
+          padding-left:5px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          /*(http://www.iconsdb.com/icons/preview/green/checked-checkbox-xxl.png)*/
+          /*width:10px;
+          height:10px;*/
+        }
+
+        label[for="name"]{
+          color:red;
+        }
+
+        input[type=checkbox]:checked + label {
+          color:green;
+        }
+
+        input[type=checkbox]:not(:checked) + label {
+          color:red;
+        }
+
+    </style>
+  </head>
+  <body>
+<div class="accordion">
+  <h3> reveal on hover</h3>
+  <div>
+    <p>bla albalbalablabalabablab</p>
+  </div>
+</div>
+
+<form>
+  <label for="name">name</label>
+  <input id="name"> <br>
+  <input type="checkbox" id="agree">
+  <label for="agree">I agree</label>
+  <input type="checkbox" id="agree2">
+  <label for="agree2">I agree too</label>
+</form>
+  </body>
+</html>
+<!-- + and right after -->

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>social sprite</title>
+    <style media="screen">
+
+    .sprite {
+      background-image: url('cat.png');
+      width:650px;
+      height:200px;
+      background-color: #fff;
+      display: inline-block;
+    }
+
+    .sprite2 {
+      background-image: url('astr.jpg');
+      width:145px;
+      height:207px;
+      background-color: #fff;
+      display: inline-block;
+    }
+
+    .sprite3 {
+      background-image: url('sprite.png');
+      width:78px;
+      height:77px;
+      background-color: #fff;
+      display: inline-block;
+    }
+    /*position controls the moving
+    up => -
+    right => +
+    left => -
+    down => +
+    */
+    .sprite3-twitter {
+      background-position: 0px 2px;
+    }
+
+    .sprite3-twitter:hover {
+      background-position: 0px 231px;
+    }
+
+
+    .sprite2-astr {
+      background-position: 2px 1px;
+    }
+
+    .sprite2-astr:hover {
+      background-position: 473px 77px;
+    }
+    .sprite-cat {
+      background-position: 680px 220px; /* x y */
+    }
+
+    .sprite-cat:hover {
+      background-position: 1038px 200px;
+    }
+    </style>
+  </head>
+  <body>
+    <a class="sprite sprite-cat" href="#"></a>
+    <a class="sprite2 sprite2-astr" href="#"></a>
+    <a class="sprite3 sprite-twitter" href="#"></a>
+
+  </body>
+</html>

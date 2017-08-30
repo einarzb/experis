@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+  </head>
+  <body style="text-align:center;font-family:arial;font-size:1em;">
+    <form autocomplete="on" action="http://wpwith.us/experis/form/" method="post">
+        <h2>Registration Form</h2>
+        <hr width="20%">
+
+        <label for="fullName"> Full Name:
+          <input id="fullName" autofocus="on" type="text" minlength="4" maxlength="32"  name="fullName" placeholder="please fill in full name" required>
+        </label>
+        <br><br>
+
+        <label for="password"> Password:
+          <input id="password" type="password" minlength="8" maxlength="16" name="password" placeholder="please fill in password" required>
+        </label>
+        <br><br>
+
+        <label for="email"> Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input id="email" type="email" minlength="8" maxlength="16" name="email" placeholder="please fill in email address" required>
+        </label>
+        <br><br>
+
+        <label for="phone"> Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input id="phone" type="tel" minlength="7" maxlength="10" name="phone" placeholder="please fill in your cellular" >
+        </label>
+        <br><br>
+
+        <label for="age"> Age:
+          <input id="age" type="number" name="age" min="13" max="120" placeholder="Age" >
+        </label>
+        <br><br>
+
+        Gender:
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="other">Other
+        <br><br>
+
+        <label style="text-align:left;" for="about">About Me <br>
+        <textarea id="about" name="about" rows="8" cols="30" placeholder="About Me.."></textarea>
+        </label>
+        <br><br>
+
+        <label for="media">How did you hear about us?
+            <select name="media" id="media">
+              <option value="choose" selected>choose</option>
+              <option value="facebook">facebook</option>
+              <option value="google">google</option>
+              <option value="friend">friend</option>
+              <option value="other">other</option>
+            </select>
+        </label>
+        <br><br>
+
+        <label for="newsletter">
+          <input type="checkbox" name="newsletter" value="yes" checked>
+          Agree to terms
+        </label>
+
+        <!-- hidden inputs and submit part -->
+        <input type="hidden" name="submission" value="eujc98494mnjk" required>
+        <hr width="20%">
+        <button type="submit" name="submit" style="width:20%;">send</button>
+    </form>
+  </body>
+</html>

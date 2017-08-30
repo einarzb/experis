@@ -1,0 +1,18 @@
+1. Node.js starts
+2. initializes the event loop
+3. process the provided input script which may make async API calls, schedule timers,
+ or call process.nextTick().
+---
+1. each phase has FIFO queue of callbacks to execute.
+2. when the event loop enters a given phase >> it will perform any operations specific to that phase,
+ then execute callbacks in that phase's queue until the queue has been exhausted or the maximum number of callbacks has
+executed.
+3. When the queue has been exhausted or the callback limit is reached >>
+4. event loop will move to the next phase, and so on.
+
+---
+4. begins processing the event loop.
+
+
+if setImeddiate is inside i/o level - it will always run first.
+nextTick() is at the end of every phase (timers/etc)

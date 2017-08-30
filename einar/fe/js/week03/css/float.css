@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: brown;
+    background-color: lightyellow;
+    margin: 0;
+}
+
+h2,h3,h4,h5,h6 {
+    color: darkblue;
+}
+
+h1 {
+    font-size: 64px;
+    color: white;
+    background-color: darkgreen;
+    margin: auto;
+    padding: 5px 30px;
+}
+
+#main, h1 div {
+    width: 960px;
+    margin: auto;
+}
+
+#main {
+    background: #fff;
+    padding: 0 15px;
+}
+
+img {
+    height: 300px;
+}
+
+hr {
+    width: 100%;
+    align-content: center;
+}
+
+table {
+    width: 500px;
+}
+thead {
+    font-weight: bold;
+    text-align: center;
+}
+
+#mixing {
+    color: pink;
+}
+
+.make-green.italic-text {
+    color: blue;
+}
+
+div#my-id.make-green {
+
+}
+
+.make-green {
+    color: green;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+h4.italic-text {
+    background: #000;
+}
+
+#pink-table, h1 {
+    font-size: 3em;
+}
+
+#pink-table td {
+    background: pink;
+}
+
+#pink-table thead td {
+    background: yellow;
+}
+
+button {
+    margin: 15px;
+}
+
+.special-button {
+    background: green;
+    color: #FFF;
+    border: 0.02em solid red;
+    padding: 0.25em 1em;
+    font-weight: bold;
+}
+
+.special-button.small {
+    font-size: 0.9em;
+}
+
+.special-button.big {
+    font-size: 2em;
+}
+
+.special-button.biggest {
+    font-size: 5em;
+}
+
+/* -------------------------------------- */
+.accordion {
+    background-color: #EEE;
+    border: 1px solid #CCC;
+}
+
+.accordion span {
+    padding: 20px;
+}
+
+.accordion div {
+    padding: 20px;
+    background: #cFc;
+    display: none;
+}
+.accordion:hover div {
+    display: block;
+}
+
+.emph {
+    background: gray;
+}
+
+.toolbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.toolbar a {
+    display: inline-block;
+    background: #DDD;
+    padding: 5px 20px;
+    margin: 10px;
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.toolbar a:hover {
+    background: #CCC;
+    color: purple;
+}
+
+
+
+
+
+
+
+
+
+
+#main {
+    width: 600px;
+}
+
+#main div {
+    box-sizing: border-box;
+}
+
+.sidebar {
+    float: left;
+    background: khaki;
+    width: 35%;
+}
+
+.content {
+    float: right;
+    background: lawngreen;
+    width: 65%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#footer {
+
+}

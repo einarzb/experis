@@ -1,0 +1,54 @@
+body{
+  margin: 0;
+  font-family: monospace;
+  background-color: #5F021F;
+}
+header{
+  width:400px;
+  text-align: center;
+  margin: auto;
+}
+h1{
+  color:#FFF;
+}
+.taskList {
+  border-radius: 5px;
+  padding: 5px;
+  margin: auto;
+  color:#5F021F;
+  background-color: #fff;
+  width:400px;
+  min-height: 400px;
+}
+
+.taskForm{
+  text-align: center;
+  padding-top:30px;
+  border-radius: 5px;
+  margin: 8px auto;
+  color:#5F021F;
+  background-color: #fff;
+  width:410px;
+  height: 150px;
+}
+
+input, textarea {
+  font-size: 1em;
+  border-radius: 5px;
+  border:1px solid grey;
+  margin: 5px 0px;
+}
+#comp{
+  border:none;
+  width:35px;
+}
+#sub {
+  font-size: 1em;
+  background-color:#5F021F;
+  color: #fff;
+  border:none;
+  border-radius: 5px;
+  margin-top:10px;
+  height: 30px;
+  width:90px;
+}

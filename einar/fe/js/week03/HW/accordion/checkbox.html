@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>checkbox accordion</title>
+    <style media="screen">
+      body {
+        font-family: Arial;
+        margin: 0;
+        box-sizing: border-box;
+        }
+
+        #main {
+          margin: 0 auto;
+          width: 500px;
+        }
+
+        #accordion input {
+        display: none;
+        }
+
+        #accordion label {
+        color:#fff;
+        background: red;
+        border-radius: 5px;
+        display: block;
+        margin-bottom: 4px;
+        padding: 4px 5px;
+        }
+
+        #accordion label:hover {
+        background:grey;
+        }
+
+        #accordion > input:checked + label {
+        background: blue;
+        color: white;
+        margin-bottom: 0;
+        }
+        #accordion .hideme {
+        background: #f7f7f7;
+        height:0px;
+        overflow:hidden;
+        }
+        #accordion .hideme p {
+          padding: 1em;
+        }
+        #accordion input:checked .hideme {
+        }
+        /* ~ means ALL elements after
+          + means the CLOSEST element NEXT
+        */
+        #accordion input:checked ~ .hideme {
+        height: auto;
+        margin-bottom: 10px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- checkbox accordion -->
+    <div id="main">
+		<div id="accordion">
+			<div class="holder">
+        <h1>checkbox button version</h1>
+				<input type="checkbox" name="accordions" id="first" />
+				<label for="first">Offred</label>
+					<p class="hideme">
+Offred, one the few fertile women known as Handmaids in the oppressive Republic of Gilead, struggles to survive as a reproductive surrogate for a powerful Commander and his resentful wife.</p>
+			</div>
+			<div>
+				<input type="checkbox" name="accordions" id="second" />
+				<label for="second">Birth Day</label>
+				<div class="hideme">
+					<p>Offred and her fellow Handmaids assist with the delivery of Janine's baby, prompting Offred to recall her own daughter's birth. Offred draws closer to Ofglen while dreading a secret meeting with the Commander.</p>
+				</div>
+			</div>
+			<div>
+				<input type="checkbox" name="accordions" id="third" />
+				<label for="third">Late</label>
+				<div class="hideme">
+					<p>Offred visits Janine's baby with Serena Joy and remembers the early days of the revolution, before Gilead. Ofglen faces a difficult challenge.</p>
+				</div>
+			</div>
+      <input type="checkbox" name="accordions" id="fourth" />
+				<label for="fourth">Nolite Te Bastardes Carborundorum</label>
+				<div class="hideme">
+					<p>As Offred is not pregnant, she is banished to her room by the commander's wife. There, she discovers a message written in latin by the previous Offred. She is longing to know what the message means and what has happened to its writer.</p>
+				</div>
+			</div>
+			<div>
+		</div>
+  </div>
+
+  <!-- radio button accordion -->
+  <div id="main">
+  		<div id="accordion">
+  			<div class="holder">
+          <h1>radio button version</h1>
+  				<input type="radio" name="accordions" id="fifth" />
+  				<label for="fifth">Offred</label>
+  					<p class="hideme">
+  Offred, one the few fertile women known as Handmaids in the oppressive Republic of Gilead, struggles to survive as a reproductive surrogate for a powerful Commander and his resentful wife.</p>
+  			</div>
+  			<div>
+  				<input type="radio" name="accordions" id="sixth" />
+  				<label for="sixth">Birth Day</label>
+  				<div class="hideme">
+  					<p>Offred and her fellow Handmaids assist with the delivery of Janine's baby, prompting Offred to recall her own daughter's birth. Offred draws closer to Ofglen while dreading a secret meeting with the Commander.</p>
+  				</div>
+  			</div>
+  			<div>
+  				<input type="radio" name="accordions" id="seventh" />
+  				<label for="seventh">Late</label>
+  				<div class="hideme">
+  					<p>Offred visits Janine's baby with Serena Joy and remembers the early days of the revolution, before Gilead. Ofglen faces a difficult challenge.</p>
+  				</div>
+  			</div>
+        <input type="radio" name="accordions" id="eigth" />
+  				<label for="eigth">Nolite Te Bastardes Carborundorum</label>
+  				<div class="hideme">
+  					<p>As Offred is not pregnant, she is banished to her room by the commander's wife. There, she discovers a message written in latin by the previous Offred. She is longing to know what the message means and what has happened to its writer.</p>
+  				</div>
+  			</div>
+  			<div>
+  		</div>
+    </div>
+  </body>
+</html>

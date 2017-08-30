@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>social sprite</title>
+    <style media="screen">
+
+    .sprite {
+      background-image: url(https://orig10.deviantart.net/2dcb/f/2014/051/9/2/f2u__social_media_icons_by_lilmisssunbear-d77bp8w.png);
+      width:26px;
+      height:26px;
+      display: inline-block;
+    }
+
+    /*position controls the moving
+    up => -
+    right => +
+    left => -
+    down => +
+    */
+
+    .sprite-behance {
+      background-position: -4px -4px; /* x y */
+    }
+    .sprite-blogspot {
+      background-position: -32px -4px;
+    }
+    .sprite-deviantart {
+      background-position: -60px -4px;
+    }
+
+    .sprite-behance:hover {
+      background-position: -3px -66px;
+    }
+    .sprite-blogspot:hover {
+      background-position: -31px -66px;
+    }
+    .sprite-deviantart:hover {
+      background-position: -59px -66px;
+    }
+    </style>
+  </head>
+  <body>
+    <a class="sprite sprite-behance" href="www.behance.com"></a>
+    <a class="sprite sprite-blogspot" href="www.blogspot.com"></a>
+    <a class="sprite sprite-deviantart" href="www.blogspot.com"></a>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>sketchbook</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="header">
+      <h2>SketchBook</h2>
+        <div class="toolbar">
+            <button id="rectMakerBtn" type="button" name="rectangle">rectangle</button>
+            <button id="ovalMakerBtn" type="button" name="oval">oval</button>
+            <button id="colorBtn" type="button" name="color">color</button>
+        </div>
+        <div class="toolbar">
+              <button id="loadBtn" type="button" name="loadBtn">load</button>
+                  <div id="loadModal" class="popup">
+                    <div class="popup-content">
+                        <span id="xcloseLoad" class="close">&times;</span>
+                          <h4>Load</h4>
+                          <form>
+                            <label>pick your drawing</label>
+                            <select class="drawings" name="">
+                              <option value=""></option>
+                            </select>
+                            <button type="button" id="loadDrawBtn" name="loadDrawBtn">load</button>
+                          </form>
+                    </div>
+                  </div>
+
+              <button id="saveBtn" type="button" name="saveBtn">save</button>
+                  <div id="saveModal" class="popup">
+                    <div class="popup-content">
+                        <span id="xcloseSave" class="close">&times;</span>
+                          <h4>Save</h4>
+                          <div class="modal-header">
+                              <div class="modal-body">
+                                <p></p>
+                              </div>
+                          </div>
+                          <form>
+                            <label>name your draw</label>
+                            <input type="text" id="drawName" value="" name="drawName" placeholder="Type in">
+                            <button type="button" id="saveDrawBtn" name="saveDrawBtn">submit</button>
+                          </form>
+                    </div>
+                  </div>
+
+              <button id="deleteBtn" type="button" name="delete">delete</button>
+        </div>
+          <table id="pallete" class="reveal">
+            <tr>
+              <td><button type="button" id="pink" name="pink"></button></td>
+              <td><button type="button" id="black" name="black"></button></td>
+              <td><button type="button" id="red" name="red"></button></td>
+            </tr>
+            <tr>
+              <td><button type="button" id="green" name="green"></button></td>
+              <td><button type="button" id="purple" name="purple"></button></td>
+              <td><button type="button" id="white" name="white"></button></td>
+            </tr>
+          </table>
+    </div>
+    <!--popup part  -->
+    <div id="savePopup" class="popup">
+      <div class="popup-content">
+          <span id="xclose" class="close">&times;</span>
+          <h4>Save</h4>
+          <form>
+            <label>give name to your design</label>
+            <input type="text" id="drawName" value="" name="drawName" placeholder="Type in">
+            <button type="submit" id="saveDrawBtn" name="saveDrawBtn">saveDraw</button>
+          </form>
+      </div>
+    </div>
+
+      <div id="canvas"></div>
+
+    <div class="footer">
+      By Einar Barzilay
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+<p>/*binary tree*/</p>
+Each node in a tree has at most one parent, and one single node (called the root node), has no parent.
+A node that has no children is called a leaf of the tree.
+the root of any tree is an ancestor of every node in the tree.
+A subtree in a tree is any node in the tree together with all of its descendants.
+we can use trees to represent information that itself is hierarchical in nature: organizational charts and family trees.
+
+///
+perfect - all leaves have same depth
+complete- always have 2 children on the left leaf
+
+<ul>
+<li>height(T) = 1 + max{height(TL), height(TR)}</li>
+<li>if tree is empty then its height is -1; (n=0)</li>
+<li> binray tree can have same nodes but different height</li>
+<li> each node can have at most 2 children</li>
+<li> root node is the first on top of tree</li>
+<li></li>
+    (n=1) - one tree
+    (n=2) - two trees
+    (n=3) - five trees
+
+</ul>
+
+binary search tree -
+left leaf - lower child
+right leaf - higher child
+e.g
+root (8)
+first level- right(10) left (3)
+2d level - root(3) left(1) right(6)
+3rd level - root(6) left(4) right(7)
+
+<h1>Tree Scanning</h1>
+      <h2>in order - prints the tree by order</h2>
+      <p>left - root - right</p>
+
+      <h2>post order - to calc height of tree or delete the whole tree(starting from nodes)</h2>
+      <p>left >> right >> root</p>
+
+      <h2>pre order - calc the level of tree (root is level 0)</h2>
+      <p>root>left>right</p>
+ </body>
+</html>

@@ -1,0 +1,53 @@
+body{
+  color:#000;
+  margin:0px;
+  background-color: pink;
+}
+
+h1{
+  background-color: green;
+  color:#fff;
+  height:40px;
+  margin:0px;
+  padding:10px;
+}
+
+.main {
+  width:960px;
+  margin:auto;
+}
+
+.main div {
+  box-sizing: border-box;
+  border:2px solid black;
+}
+
+.footer{
+  width:960px;
+  margin:auto;
+}
+
+.clearfix {
+  clear:both;
+}
+
+/*after only works if it has content*/
+.clearfix:after {
+  clear:both;
+  display:block;
+  content:" "; /*empty content*/
+}
+
+.left {
+  background-color: blue;
+  width:35%;
+  direction: rtl;
+  float: left;
+}
+
+.right {
+  width:65%;
+  background-color: red;
+  float: right;
+  direction: ltr;
+}

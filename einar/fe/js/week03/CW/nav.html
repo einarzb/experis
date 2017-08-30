@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>nav bar</title>
+    <style media="screen">
+
+      body{
+        margin:0;
+        padding:0;
+        font-family: arial;
+        color:#000;
+        font-size: 1.23em;
+        line-height: 1.23em;
+      }
+      nav {
+        background-color: red;
+        color:#fff;
+        font-size: 14px;
+      }
+      nav ul {
+        list-style: none;
+        padding:0;
+        margin:0;
+      }
+      nav > ul > li {
+        display: inline-block;
+      }
+
+      nav ul a, nav ul span {
+
+      }
+
+      .navHolder, .nav {
+        margin:auto;
+        width:960px;
+        background-color: lightblue;
+      }
+
+      .about > ul {
+        position: absolute;
+        left:140px;
+        top:30px;
+
+      }
+
+      .andrey{
+        background-color: black;
+        color:#000;
+      }
+
+      .andrey > ul {
+        position: absolute;
+        left:122px;
+      }
+
+      .nav > ul{
+        list-style-type: none;
+        display: inline-block;
+        position:absolute;
+        background-color: lightblue;
+        margin:0;
+        width:100%;
+      }
+
+      li{
+        display: inline-block;
+        border-left:1px solid #ccc;
+        padding:5px;
+        min-width: 120px;
+        max-width:150px;
+      }
+
+    ul > li:hover{
+        background-color: pink;
+        color:#fff;
+        display: inline-block;
+        border-left:1px solid #ccc;
+        padding:5px;
+      }
+
+    ul > li > ul > li {
+        display: none;
+     }
+
+    ul > li:hover > ul li {
+          display:block;
+          background-color: yellow;
+          color:#000;
+          border-left:1px solid #ccc;
+          padding:5px;
+        }
+        /*color hovering*/
+        ul > li > ul li:hover {
+          color:red;
+          background-color: green;
+        }
+        /*hide the 3 level nested list*/
+        ul > li > ul > li > ul{
+            display: none;
+         }
+
+        ul > li > ul > li:hover ul {
+            display: block;
+          }
+
+        #message {
+          position: fixed;
+          bottom: 0;
+          background-color:black;
+          color:#fff;
+          width:200px;
+          height:10%;
+          padding:10px;
+          text-align: center;
+        }
+
+        #message div {
+          display: none;
+        }
+
+        #message:hover div {
+          display: block;
+        }
+
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Gallery</li>
+        <li></li>
+      </ul>
+    </nav>
+      <div class="navHolder">
+          <ul class="nav">
+              <li>Home</li>
+                <li class="about">About Us
+                  <ul>
+                      <li>Einar</li>
+                      <li>Assaf</li>
+                      <li class="andrey">Andrey
+                          <ul>
+                              <li>CSS</li>
+                              <li>jQuery</li>
+                              <li>HTML</li>
+                              <li>javascript</li>
+                          </ul>
+                       </li>
+                  </ul>
+              </li>
+              <li>Gallery</li>
+              <li>Contact Us</li>
+              <li>Team</li>
+          </ul>
+      </div>
+      <div id="message">hello
+        <div>
+          hlallasl;sl;sl;ls;s;l <br>
+          sshshshshshshs
+          shshshgshsh <br>
+          sgshsh
+        </div>
+      </div>
+  </body>
+</html>

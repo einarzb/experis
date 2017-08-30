@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="controller/currencyCtrl.js"></script>
+  <title>currency Ctrl</title>
+  <style media="screen">
+  body{
+    font-family:arial;
+  }
+    input{
+      width:40px;
+    }
+  </style>
+</head>
+<body ng-controller="currencyCtrl">
+  <p>Enter budget in ils <input min=0 type="number" ng-model="shekel"></p>
+  <h1>currency Table</h1>
+  <hr>
+  <p><b>dollar:</b> {{(shekel * dollar).toFixed(2)}} $</p>
+  <p><b>euro:</b> {{(shekel * euro).toFixed(2)}}</p>
+  <p><b>japan yen:</b> {{shekel * japanYen}}</p>
+  <p><b>pound:</b> {{(shekel* pound).toFixed(2)}}</p>
+  <p><b>egp:</b> {{shekel* egp}}</p>
+</body>
+
+<!-- ctrler would point on the ctrler object -->
+<body ng-controller="currencyCtrl as ctrler">
+    shekel <input type="text" ng-model="ctrler.shekel">
+    Dollar:{{ctrler.dollar}}
+</html>

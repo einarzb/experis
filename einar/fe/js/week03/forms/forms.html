@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html lang="en">
+    	<head>
+    		<title>Tables</title>
+    		<meta charset="UTF-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <style media="screen">
+          body{
+            text-align: center;
+          }
+          label{
+            font-size: 2em;
+            font-weight: bold;
+          }
+        </style>
+    	</head>
+    	<body>
+        <!-- post is more descreet the data wont be passed on the url-->
+    		<form method="POST" action="http://wpwith.us/experis/form/">
+    			<label for="firstname">First Name:
+          <input type="text" id="firstname" name="firstname" required>
+          </label>
+          <!-- input must have name -->
+          <br>
+
+          <!-- The div element, also known as a division element, is a general purpose container for other elements. -->
+
+
+
+    			Last Name:
+          <input type="text" minlength="2" maxlength="44" required name="lastname">
+          <br>
+
+    			Age:
+           <input type="number" required min="2" max="20" name="age">
+           <br>
+
+
+  <textarea placeholder="write here" name="textbox" rows="20" cols="40"></textarea>
+  <br><br>
+  <select class="" name="selectNum">
+    <option value="one" name="one">one</option>
+    <option value="two" name="two">two</option>
+    <option value="three" name="three">three</option>
+  </select>
+  <br><br>
+  <input type="hidden" name="clientid" value="eujc98494mnjk">
+        <input type="checkbox" checked name="agree" value="ok">do you agree
+    			<input type="submit" value="Send">
+    		</form>
+    	</body>
+    </html>

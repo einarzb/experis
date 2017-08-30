@@ -1,0 +1,42 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style media="screen">
+  input[type=checkbox] {
+display: none
+
+}
+
+input[type=checkbox] + label {
+font-weight: bold;
+padding-left: 30px;
+background: url(https://v1.mrpiracy.xyz/images/checkbox_empty.png) no-repeat;
+background-size: contain;
+}
+
+label[for="name"] {
+color: purple;
+}
+
+input[type=checkbox]:checked + label {
+color: green;
+background-image: url(http://www.sdtjpt.gov.cn/sites/sdtjpt/newskin/images/accept.png)
+}
+
+  </style>
+</head>
+<body>
+  <form><br>
+    <label for="name">name</label>
+    <input id="name"><br>
+    <input type="checkbox" id="agree">
+    <label for="agree">I agree</label><br>
+    <label for="name3">name</label>
+    <input id="name3"><br>
+   <input type="checkbox" id="agreetoo">
+    <label for="agreetoo">I agree too</label>
+  </form>
+</body>
+</html>

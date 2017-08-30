@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h2= title
+  form(method="post" action='/users/login_form')
+    label(for="username")= username
+    input#username(type="text",name="username")
+    br
+    br
+    label(for="password")= password
+    input#password(type="password",name="password")
+    br
+    input#submit(type="submit", value="#{submit}")
+  script(src="http://code.jquery.com/jquery-3.2.1.min.js")
+  script(src="ajax.js")

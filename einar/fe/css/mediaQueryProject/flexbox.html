@@ -1,0 +1,197 @@
+<!--desktop first-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Experis by Einar Barzilay</title>
+    <style media="screen">
+
+      body {
+        background-color:  #EEF;
+        margin:0;
+        font-family: arial;
+        color:grey;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .logo{
+        padding:5px 2px;
+        width:182px;
+        height:68px;
+      }
+
+     .contentBg {
+        width:100%;
+        }
+
+      .header  {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .header nav > ul > li {
+        display:inline-flex;
+        justify-content:flex-end;
+
+        margin-top:30px;
+        list-style: none;
+        padding:5px;
+        border-right: 2px solid grey;
+        color:#000;
+      }
+
+      .header nav > ul > li:hover {
+        display:inline-flex;
+        justify-content:flex-end;
+        margin-top:30px;
+        list-style: none;
+        padding:5px;
+        border-right: 2px solid grey;
+        background-color: grey;
+        color:#fff;
+      }
+
+      .header nav > ul > li:last-child{
+        border:none;
+      }
+
+     .skip {
+        display: none;
+        background-color: grey;
+        color:#fff;
+        border-bottom-right-radius: 8px;
+        border:none;
+      }
+        /*the only padding I have!!! controls the all file*/
+      .content, .main, .sidebar {
+        padding:0px 8px;
+        max-width: 960px;
+        background-color: #fff;
+        margin:auto;
+      }
+
+    .main {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content:space-between;
+      width:60%;
+    }
+
+    .sidebar {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content:space-between;
+      width:35%;
+    }
+
+      footer{
+        background-color:#eee;
+      }
+
+      footer .content {
+        padding:10px 10px;
+        background-color: transparent;
+        max-width:960px;
+        text-align: justify;
+    }
+/******************************************************************************************************************
+mobile version
+*****************************************************************************************************************************/
+    @media (max-width: 640px) {
+
+      body {
+        background-color:  #FFF;
+      }
+
+      .content {
+        margin:auto;
+      }
+
+      .header {
+        position: relative;
+        margin-top: 45px;
+      }
+
+     .skip {
+        position: relative;
+        display: block;
+      }
+
+      .main, .sidebar, footer {
+        padding:0px 8px;
+        box-sizing: border-box;
+        width:100%;
+      }
+
+      footer p {
+        padding: 0;
+      }
+
+      /*float none is != clear both */
+      .header nav {
+        float:none;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .header nav ul {
+        padding:0;
+      }
+
+    .header nav > ul > li {
+      margin:0px;
+      text-align: center;
+      background-color: #EFEFEF;
+      margin-bottom:5px;
+      list-style: none;
+      display:block;
+      border:none;
+      }
+
+    .contentBg{
+      width:97%;
+      padding:5px;
+      margin:0;
+    }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <a href="#main">
+        <button type="button" class="skip">Skip to Main Content</button>
+      </a>
+           <div class="header">
+                    <img class="logo" src="images/logo.jpg" data-src="images/logo.jpg" alt="experis logo">
+                    <nav>
+                      <ul>
+                        <li>Home</li><li>About</li><li>Work</li><li>Contact</li>
+                      </ul>
+                    </nav>
+          </div>
+
+          <img class="contentBg" src="images/kaws.jpg" alt="atmosphere photo">
+          <div class="main" id="main">
+          <h3>Main Section</h3>
+          <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+          </p>
+        </div>
+        <div class="sidebar">
+          <h3>Sub Section</h3>
+                <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                </p>
+        </div>
+  </div>
+  <footer>
+     <div class="content">
+       a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years
+    </div>
+</footer>
+  </body>
+</html>

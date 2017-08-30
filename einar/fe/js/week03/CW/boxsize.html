@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .div1{
+        width: 300px;
+        height: 100px;
+        border:1px solid blue;
+      }
+      .div2{
+        width: 300px;
+        height: 100px;
+        padding:50px;
+        border:1px solid red;
+      }
+      .div3{
+        width: 300px;
+        height: 100px;
+        border:1px solid red;
+        box-sizing: border-box;
+      }
+      .div4{
+        width: 300px;
+        height: 100px;
+        padding:50px;
+        border:1px solid red;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <p>solve padding problem not margin</p>
+<h2>without box sizing</h2>
+<div class="div1">this div is smaller</div>
+<div class="div2">this div is bigger</div>
+<h2>with box sizing</h2>
+<div class="div3">div are same size</div>
+<div class="div4">yes</div>
+  </body>
+</html>

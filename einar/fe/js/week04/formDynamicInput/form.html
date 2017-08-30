@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 4px solid #888;
+  width: 40%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h4{
+  background-color: blue;
+  padding:2px;
+  color:#fff;
+}
+    </style>
+  </head>
+  <body>
+
+    <button id="save">Save</button>
+        <div id="savePopup" class="popup">
+          <div class="popup-content">
+              <span id="xclose" class="close">&times;</span>
+              <h4>Save</h4>
+              <form>
+                <label>give name to your design</label>
+                <input type="text" id="drawName" value="" name="drawName" placeholder="Type in">
+                <button type="submit" id="saveDrawBtn" name="saveDrawBtn">saveDraw</button>
+              </form>
+          </div>
+        </div>
+
+    <script>
+
+      var saveDrawBtn = document.getElementById("saveDrawBtn");
+      saveDrawBtn.addEventListener("click", saveDraw);
+
+      function saveDraw(){
+        var userInput = document.getElementById("drawName").value;
+          // document.getElementById("demo").innerHTML += userInput;
+          console.log(userInput);
+    }
+
+
+          var popup = document.getElementById('savePopup');
+          var btn = document.getElementById("save");
+          // Get the <span> element that closes the modal
+          var close = document.getElementById("xclose");
+
+          btn.onclick = function() {
+              popup.style.display = "block";
+          }
+
+          close.onclick = function() {
+              popup.style.display = "none";
+          }
+
+          // click anywhere outside of the popup, close it
+          window.onclick = function(event) {
+              if (event.target == popup) {
+                  popup.style.display = "none";
+              }
+          }
+    </script>
+  </body>
+</html>

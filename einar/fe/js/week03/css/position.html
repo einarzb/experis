@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>accordion</title>
+    <style>
+      ul:after{
+        content:"";
+        display: block;
+        clear: both;
+      }
+
+      li{
+        position:relative;
+        top:20px;
+        float:left;
+        padding:5px 10px;
+        border-left:1px solid #ccc;
+        list-style-type: none;
+      }
+      /*makes the border like this separtor | */
+      li:first-child{
+        border:0px;
+        left:-10px;
+      }
+
+      button {
+        position: absolute;
+        top:10px;
+        left:10px;
+      }
+
+      button:hover {
+        position: relative;
+        top:5px;
+        right:5px;
+      }
+
+      p {
+        position:relative;
+        top:20px;
+        box-sizing: border-box;
+      }
+
+      .padded {
+        border:1px solid red;
+        padding:30px;
+      }
+
+      #image-swap img{
+        position:absolute;
+        height:400px;
+
+      }
+      /*the second image is in absoulte (the girl image)*/
+      #image-swap img:nth-child(1){
+        top:180px;
+        left:0px;
+       }
+
+       #image-swap:hover img:nth-child(2){
+         display: block;
+         top:0px;
+         left:0px;
+        }
+
+        #image-swap img:nth-child(1):hover{
+          top:180px;
+          left:0px;
+          z-index:1;
+         }
+
+    </style>
+  </head>
+<body>
+
+  <div class="ltr-text">
+    <ul style="position:relative;
+    top:-4px;">
+      <li>home</li>
+      <li>about</li>
+      <li>product</li>
+      <li>contact</li>
+    </ul>
+      <p>The Handmaid's Tale isa 1985 dystopian novel[2] by Canadian author Margaret Atwood.[3][4] Set in a near-future New England, in a totalitarian theocracy that has overthrown the United States government, the novel explores themes of women in subjugation and the various means by which they gain individualism and independence. The novel's title echoes the component parts of Geoffrey Chaucer's The Canterbury Tales, which comprises a series of connected stories ("The Merchant's Tale", "The Parson's Tale", etc.).[5]
+      </p>
+
+      <p>
+        <h3>static</h3>
+          when theres no defination than static is the position <br>
+          relative to the FIRST absolute class <br>
+          size of div is by it's content width/height
+      </p>
+      </div>
+<div class="padded">
+    <div class="padded">
+      <div class="padded">
+        <button> click me</button>
+      </div>
+    </div>
+</div>
+
+<div id="image-swap"><!--relative-->
+  <img src="don.jpg" height="400" width="400" alt=""> <!--static-->
+  <img src="girl.jpg" height="400" width="400" alt=""><!--absoulte-->
+</div>
+  </body>
+</html>

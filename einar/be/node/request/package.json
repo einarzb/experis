@@ -1,0 +1,17 @@
+{
+  "name": "request",
+  "version": "1.0.0",
+  "description": "my node setup",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Einar Barzilay",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.81.0",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {}
+}

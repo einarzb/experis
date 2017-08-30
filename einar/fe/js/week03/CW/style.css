@@ -1,0 +1,95 @@
+body{
+  margin:0;
+  font-family: Arial;
+}
+
+.first {
+  background-size: 200px 100px;
+  border:2px solid;
+  height: 300px;
+  margin-bottom: 50px;
+  background-image:url(images/mand.jpg);
+  /*background-color: #448459;*/
+}
+
+#second {
+  border:2px solid;
+  height: 300px;
+  margin-bottom: 50px;
+  background-image:url(images/mand.jpg);
+  background-repeat: repeat-x;
+  background-size: 200px 100px;
+}
+
+#third {
+  border:2px solid;
+  height: 300px;
+  margin-bottom: 50px;
+  background-image:url(images/mand.jpg);
+  background-repeat: repeat-y;
+  background-size: 200px 100px;
+}
+#fourth {
+  border:2px solid;
+  height: 300px;
+  margin-bottom: 50px;
+  background-image:url(images/mand.jpg);
+  background-repeat: no-repeat;
+  background-size: 200px 100px;
+}
+#fifth {
+  border:2px solid;
+  height: 300px;
+  margin-bottom: 50px;
+  background-image:url(images/mand.jpg);
+  background-size: 200px 100px;
+  background-color: yellow;
+}
+#sixth {
+  border:2px solid;
+  height: 300px;
+  margin-bottom: 50px;
+  background-image:url(images/mand.jpg);
+  background-size: 200px 100px;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+#seventh {
+  border:2px solid;
+  height: 300px;
+  margin-bottom: 50px;
+  background-image:url(images/mand.jpg);
+  background-size: 200px 100px;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+#eight {
+  border:2px solid;
+  height: 300px;
+  margin-bottom: 50px;
+  background-image:url(images/mand.jpg);
+  background-size: 200px 100px;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+#nine{
+  border:2px solid;
+  height: 300px;
+  margin-bottom: 50px;
+  background-image:url(images/mand.jpg);
+  background-size: 200px 100px;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+#ten{
+  border:2px solid;
+  height: 300px;
+  margin-bottom: 50px;
+  background-image:url(images/mand.jpg);
+  background-size: 200px 100px;
+  background-repeat:no-repeat;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="todoApp" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>robots to do list</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <!-- <script src="controllers/userCtrl.js"></script> -->
+  <script src="controllers/taskCtrl.js"></script>
+  <script src="services/tasksService.js"></script>
+  <!-- <script src="services/usersService.js"></script> -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-controller="taskCtrl as ctrler">
+  <header>
+    <h1>ROBOCOP | TO DO LIST</h1>
+    <hr>
+  </header>
+  <section class="taskForm">
+    <label for="title">title:
+        <input name="title" type="text" ng-model="newTask.title">
+    </label>
+    <br>
+    <div ng-controller="passCtrl">
+    password <input type="password" ng-model="password">
+    {{password}}
+  </div>
+
+     <br>
+    <label for="taskBody"> description:
+      <textarea name="taskBody" ng-model="newTask.body"></textarea>
+    </label>
+    <br>
+    <label for="importence">importence:
+      <input type="radio" name="importence" value="not" checked ng-model="newTask.importence"> not importent
+      <input type="radio" name="importence" value="moderate" ng-model="newTask.importence"> moderate
+      <input type="radio" name="importence" value="urgent" ng-model="newTask.importence"> urgent
+    </label>
+    <br>
+    <!-- <label for="complete">complete:
+        <input id="comp" name="complete" type="number" min="0" max="100" ng-model="task.newTask">%
+    </label> -->
+
+    <button id="sub" ng-click="ctrler.addTask(newTask)" type="submit">send</button>
+  </section>
+  <section class="taskList">
+    <ul>
+      <li ng-repeat="task in ctrler.tasks track by $index" ng-show="$index<11">
+        ({{$index}})<b>{{newTask.title}}</b> <br> importence | <b>{{newTask.importence}}</b>
+        <hr>
+        {{newTask.body}}
+      </li>
+    </ul>
+
+  </section>
+</body>
+</html>

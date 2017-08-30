@@ -1,0 +1,21 @@
+{
+  "name": "classkarma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.8.0"
+  },
+  "devDependencies": {
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-spec-reporter": "0.0.31",
+    "requirejs": "^2.3.5"
+  }
+}

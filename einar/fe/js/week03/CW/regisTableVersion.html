@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+  </head>
+  <body style="font-family:arial;font-size:1em;">
+
+    <form action="http://wpwith.us/experis/form/" method="post">
+        <table align="center">
+            <tr>
+              <td colspan="4">
+                <h2>Registration Form</h2>
+                <hr width="80%">
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="fullName"> Full Name:
+                    <td>
+                      <input id="fullName" autofocus="on" type="text" minlength="4" maxlength="32" autocomplete="on" name="fullName" placeholder="please fill in full name" required>
+                    </td>
+                </label>
+              </td>
+            </tr>
+
+            <tr></tr>
+            <tr></tr>
+
+            <tr>
+              <td>
+                <label for="password"> Password:
+                    <td>
+                      <input id="password" type="password" autocomplete="on" minlength="8" maxlength="16" name="password" placeholder="please fill in password" required>
+                    </td>
+                </label>
+              </td>
+            </tr>
+
+            <tr></tr>
+            <tr></tr>
+
+            <tr>
+              <td>
+                <label for="email">Email:
+                  <td>
+                      <input id="email" type="email" autocomplete="on" minlength="8" maxlength="16" name="email" placeholder="please fill in email address" required>
+                  </td>
+                </label>
+              </td>
+            </tr>
+
+            <tr></tr>
+            <tr></tr>
+
+            <tr>
+              <td>
+                <label for="phone"> Phone:
+                    <td>
+                      <input id="phone" type="tel" autocomplete="on" minlength="7" maxlength="10" name="phone" placeholder="please fill in your cellular" >
+                    </td>
+                </label>
+              </td>
+            </tr>
+
+            <tr></tr>
+            <tr></tr>
+
+            <tr>
+              <td>
+                <label for="age"> Age:
+                  <td >
+                    <input id="age" type="number" name="age" min="13" max="120" placeholder="Age" >
+                  </td>
+                </label>
+              </td>
+            </tr>
+
+            <tr></tr>
+            <tr></tr>
+
+            <tr>
+              <td>
+                <label for="gender"> Gender:
+                    <td style="font-size:0.9em">
+                        <input type="radio" name="gender" value="female">Female
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="other">Other
+                   </td>
+                 </label>
+              </td>
+            </tr>
+
+            <tr></tr>
+            <tr></tr>
+
+            <tr>
+              <td>
+                <label style="text-align:left;" for="about">About Me
+                    <td>
+                      <textarea id="about" name="about" rows="8" cols="30" placeholder="About Me.."></textarea>
+                    </td>
+                </label>
+              </td>
+            </tr>
+
+            <tr></tr>
+            <tr></tr>
+
+            <tr>
+              <td>
+                <label for="media">How did you hear<br> about us?
+                    <td>
+                      <select name="media" id="media">
+                          <option value="choose" selected>choose</option>
+                          <option value="facebook">facebook</option>
+                          <option value="google">google</option>
+                          <option value="friend">friend</option>
+                          <option value="other">other</option>
+                      </select>
+                    </td>
+                </label>
+              </td>
+            </tr>
+
+            <tr></tr>
+            <tr></tr>
+
+            <tr>
+              <td>
+                <label for="newsletter">
+                  <td>
+                    <input type="checkbox" name="newsletter" value="yes" checked>
+                    Agree to terms
+                  </td>
+                </label>
+              </td>
+            </tr>
+
+            <tr></tr>
+            <tr></tr>
+
+            <tr>
+                <td>
+                  <input type="hidden" name="submission" value="eujc98494mnjk" required>
+                </td>
+            </tr>
+          <tr>
+            <td align="left">
+              <button type="submit" name="submit">send</button>
+            </td>
+          </tr>
+      </table>
+    </form>
+  </body>
+</html>

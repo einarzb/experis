@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>accordion</title>
+    <style>
+
+      .accordion > input, accordion > div {
+        display: none;
+      }
+
+      .accordion > input:checked + div{
+        display: block;
+      }
+
+      tr:nth-child(3) ~ tr.yel{
+        background-color: yellow;
+      }
+
+      ul:after{
+        content:"";
+        display: block;
+        clear: both;
+      }
+
+      li{
+        float:left;
+        padding:5px 10px;
+        border-left:1px solid #ccc;
+        list-style-type: none;
+      }
+      /*makes the border like this separtor | */
+      li:first-child{
+        border:0px;
+      }
+
+      /*RTL*/
+
+      .rtl-text {
+        direction: rtl;
+      }
+
+      .rtl-text li {
+          float:right;
+          border-right:1px solid #ccc;
+          border-left: 0;
+      }
+    </style>
+  </head>
+<body>
+
+<div class="ltr-text">
+  <ul>
+    <li>home</li>
+    <li>about</li>
+    <li>product</li>
+    <li>contact</li>
+  </ul>
+    <p>bla albalbalablabalabablab</p>
+</div>
+<div class="rtl-text">
+  <ul>
+    <li>בית</li>
+    <li>אודות</li>
+    <li>מוצרים</li>
+    <li>צור קשר</li>
+  </ul>
+    <p>ים המלח מת לצערנו.</p>
+</div>
+  </body>
+</html>

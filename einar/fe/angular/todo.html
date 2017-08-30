@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todoApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="controller/toDoCtrl.js"></script>
+  <title>To Do ctrler</title>
+</head>
+<body ng-controller="toDoCtrl as ctrler">
+  <h4>task list</h4>
+<input type="text" ng-model="ctrler.task">
+<button ng-click="ctrler.addTask(ctrler.task)" type="submit">send</button>
+<button ng-click="ctrler.clearList()" type="button">clear list</button>
+
+<hr>
+
+<ul>
+  <div ng-repeat="task in ctrler.tasks track by $index">
+    {{task}} <button ng-click="ctrler.clearTask($index)" type="button">x</button>
+  </div>
+</ul>
+</body>
+</html>

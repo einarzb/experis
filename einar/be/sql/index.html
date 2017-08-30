@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body{background-color: #D3F6D1;font-family:'Arial';margin:0;}
+      h1{text-align: center;margin-top:20px;color:#74B49B;margin-right: 90px;}
+      form{width:350px;margin:auto;}
+      input{padding: 4px;margin:2px;border-radius: 8px;border:none;}
+      button{background-color: #74B49B;border:none;width:240px;height:30px;color:#fff;font-size:1em;border-radius: 8px;}
+    </style>
+  </head>
+  <body>
+    <h1>BMI CALC</h1>
+    <form class="" action="http://localhost:3000/bmi" method="GET">
+
+  <label for="firstname">first name
+      <input type="text" name="firstname" value="" placeholder="first name">
+  </label> <br>
+
+  <label for="lastname">last name</label>
+      <input type="text" name="lastname" value="" placeholder="last name">
+      <br>
+  <label for="height">height</label>
+  <input type="number" name="height" value="" min="150" max="200">
+  <br>
+  <label for="weight">weight</label>
+  <input type="number" name="weight" value="" min="40" max="150">
+  <br>
+  <label for="age">age</label>
+  <input type="number" name="age" value="" min="18" max="150">
+  <br><br>
+  <button type="submit">submit</button>
+    </form>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
